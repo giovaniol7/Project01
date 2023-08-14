@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Projeto01.Domain;
 
-namespace Projeto01.Persistence
+namespace Projeto01.Persistence.Contexts
 {
     public class Projeto01Context : DbContext
     {

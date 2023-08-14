@@ -1354,11 +1354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj",
+      "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj",
       "projectName": "Projeto01.API",
-      "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj",
+      "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj",
       "packagesPath": "C:\\Users\\Giovani\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\obj\\",
+      "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1380,8 +1380,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj": {
-              "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj"
+            "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.Application\\Projeto01.Application.csproj": {
+              "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.Application\\Projeto01.Application.csproj"
             }
           }
         }

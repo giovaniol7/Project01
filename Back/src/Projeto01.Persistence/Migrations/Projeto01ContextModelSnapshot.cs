@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Projeto01.Persistence;
+using Projeto01.Persistence.Contexts;
 
 namespace Projeto01.Persistence.Migrations
 {

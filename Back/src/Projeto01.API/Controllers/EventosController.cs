@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Projeto01.Persistence;
+using Projeto01.Persistence.Contexts;
 using Projeto01.Domain;
 
 namespace Projeto01.API.Controllers
