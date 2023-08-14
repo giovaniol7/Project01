@@ -94,6 +94,7 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
+
 # Chutzpah Test files
 _Chutzpah*
 
@@ -485,3 +486,5 @@ Thumbs.db
 *.db
 *.db-shm
 *.db-wal
+*.pack
+*.pack.old

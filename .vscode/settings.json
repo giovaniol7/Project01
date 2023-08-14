@@ -1,4 +1,6 @@
 {
     "dotnet.defaultSolution": "Back/src/Projeto01.API/Projeto01.API.sln",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "omnisharp.useModernNet": true,
+    "dotnet.server.useOmnisharp": false
 }

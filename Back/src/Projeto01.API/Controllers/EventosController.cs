@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Projeto01.API.Data;
-using Projeto01.API.Models;
+using Projeto01.Persistence;
+using Projeto01.Domain;
 
 namespace Projeto01.API.Controllers
 {
@@ -14,9 +14,9 @@ namespace Projeto01.API.Controllers
     public class EventosController : ControllerBase
     {
 
-        private readonly DataContext _context;
+        private readonly Projeto01Context _context;
 
-        public EventosController(DataContext context)
+        public EventosController(Projeto01Context context)
         {
             this._context = context;
         }
@@ -30,7 +30,7 @@ namespace Projeto01.API.Controllers
         [HttpGet("{id}")]
         public Evento GetById(int id)
         {
-            return _context.Eventos.FirstOrDefault(_evento => _evento.EventoId == id);
+            return _context.Eventos.FirstOrDefault(_evento => _evento.Id == id);
         }
 
         [HttpPost]

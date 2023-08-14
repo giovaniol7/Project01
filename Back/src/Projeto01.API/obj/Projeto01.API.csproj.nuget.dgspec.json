@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj": {}
+    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj": {
+    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj",
+        "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj",
         "projectName": "Projeto01.API",
-        "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj",
+        "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj",
         "packagesPath": "C:\\Users\\Giovani\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\obj\\",
+        "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,7 +32,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj": {
+                "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -84,6 +88,204 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj",
+        "projectName": "Projeto01.Application",
+        "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj",
+        "packagesPath": "C:\\Users\\Giovani\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Giovani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj": {
+                "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj"
+              },
+              "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Persistence\\Projeto01.Persistence.csproj": {
+                "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Persistence\\Projeto01.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj",
+        "projectName": "Projeto01.Domain",
+        "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj",
+        "packagesPath": "C:\\Users\\Giovani\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Giovani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Persistence\\Projeto01.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Persistence\\Projeto01.Persistence.csproj",
+        "projectName": "Projeto01.Persistence",
+        "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Persistence\\Projeto01.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Giovani\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Giovani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj": {
+                "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Domain\\Projeto01.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

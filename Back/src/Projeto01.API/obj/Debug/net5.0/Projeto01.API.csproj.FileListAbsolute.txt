@@ -55,3 +55,9 @@ D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\obj\Debug\ne
 D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\obj\Debug\net5.0\ref\Projeto01.API.dll
 D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\obj\Debug\net5.0\Projeto01.API.pdb
 D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\obj\Debug\net5.0\Projeto01.API.genruntimeconfig.cache
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Projeto01.Application.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Projeto01.Domain.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Projeto01.Persistence.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Projeto01.Application.pdb
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Projeto01.Domain.pdb
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Projeto01.Persistence.pdb

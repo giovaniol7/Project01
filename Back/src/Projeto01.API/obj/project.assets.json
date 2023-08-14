@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Humanizer.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -475,6 +475,45 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "Projeto01.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Projeto01.Domain": "1.0.0",
+          "Projeto01.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projeto01.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projeto01.Application.dll": {}
+        }
+      },
+      "Projeto01.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Projeto01.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projeto01.Domain.dll": {}
+        }
+      },
+      "Projeto01.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
+          "Projeto01.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projeto01.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projeto01.Persistence.dll": {}
         }
       }
     }
@@ -1281,6 +1320,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Projeto01.Application/1.0.0": {
+      "type": "project",
+      "path": "../Projeto01.Application/Projeto01.Application.csproj",
+      "msbuildProject": "../Projeto01.Application/Projeto01.Application.csproj"
+    },
+    "Projeto01.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Projeto01.Domain/Projeto01.Domain.csproj",
+      "msbuildProject": "../Projeto01.Domain/Projeto01.Domain.csproj"
+    },
+    "Projeto01.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Projeto01.Persistence/Projeto01.Persistence.csproj",
+      "msbuildProject": "../Projeto01.Persistence/Projeto01.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1289,6 +1343,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
+      "Projeto01.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1299,11 +1354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj",
+      "projectUniqueName": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj",
       "projectName": "Projeto01.API",
-      "projectPath": "d:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\Projeto01.API.csproj",
+      "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\Projeto01.API.csproj",
       "packagesPath": "C:\\Users\\Giovani\\.nuget\\packages\\",
-      "outputPath": "d:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\Back\\src\\Projeto01.API\\obj\\",
+      "outputPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1324,7 +1379,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj": {
+              "projectPath": "D:\\Users\\Giovani\\Documents\\_Cursos\\Project01\\back\\src\\Projeto01.Application\\Projeto01.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
