@@ -11,9 +11,9 @@ namespace Projeto01.API.Controllers
     [Route("api/[controller]")]
     public class EventosController : ControllerBase
     {
-        private readonly IEventosService _eventoService;
+        private readonly IEventoService _eventoService;
 
-        public EventosController(IEventosService eventoService)
+        public EventosController(IEventoService eventoService)
         {
             _eventoService = eventoService;
 

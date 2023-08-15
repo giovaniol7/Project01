@@ -29,7 +29,7 @@ namespace PROJETO01.API
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
             services.AddControllers();
-            services.AddScoped<IEventosService , EventoService>();
+            services.AddScoped<IEventoService, EventoService>();
             services.AddScoped<IGeralPersist, GeralPersist>();
             services.AddScoped<IEventoPersist, EventoPersist>();
             services.AddCors();

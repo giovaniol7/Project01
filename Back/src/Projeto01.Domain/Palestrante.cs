@@ -7,7 +7,7 @@ using Projeto01.Domain;
 namespace Projeto01.Domain
 {
     public class Palestrante
-    {
+   {
         public int Id { get; set; }
         public string Nome { get; set; }
         public string MiniCurriculo { get; set; }

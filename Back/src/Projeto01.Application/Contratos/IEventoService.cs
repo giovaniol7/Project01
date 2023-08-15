@@ -3,7 +3,7 @@ using Projeto01.Domain;
 
 namespace Projeto01.Application.Contratos
 {
-    public interface IEventosService
+    public interface IEventoService
     {
         Task<Evento> AddEventos(Evento model);
         Task<Evento> UpdateEvento(int eventoId, Evento model);

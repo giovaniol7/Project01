@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Projeto01.Domain;
 
@@ -9,7 +5,8 @@ namespace Projeto01.Persistence.Contexts
 {
     public class Projeto01Context : DbContext
     {
-        public Projeto01Context(DbContextOptions<Projeto01Context> options) : base(options) { }
+        public Projeto01Context(DbContextOptions<Projeto01Context> options) 
+            : base(options) { }
         public DbSet<Evento> Eventos { get; set; }
         public DbSet<Lote> Lotes { get; set; }
         public DbSet<Palestrante> Palestrantes { get; set; }
@@ -18,7 +15,18 @@ namespace Projeto01.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<PalestranteEvento>().HasKey(PE => new { PE.EventoId, PE.PalestranteId });
+            modelBuilder.Entity<PalestranteEvento>()
+                .HasKey(pe => new {pe.EventoId, pe.PalestranteId});
+
+            modelBuilder.Entity<Evento>()
+                .HasMany(e => e.RedesSociais)
+                .WithOne(rs => rs.Evento)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Palestrante>()
+                .HasMany(e => e.RedesSociais)
+                .WithOne(rs => rs.Palestrante)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

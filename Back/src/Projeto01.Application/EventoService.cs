@@ -8,17 +8,15 @@ using Projeto01.Persistence.Contratos;
 
 namespace Projeto01.Application
 {
-    public class EventoService : IEventosService
+    public class EventoService : IEventoService
     {
-        public readonly IGeralPersist _geralPersist;
-        public readonly IEventoPersist _eventoPersist;
-
+        private readonly IGeralPersist _geralPersist;
+        private readonly IEventoPersist _eventoPersist;
         public EventoService(IGeralPersist geralPersist, IEventoPersist eventoPersist)
         {
-            _geralPersist = geralPersist;
             _eventoPersist = eventoPersist;
+            _geralPersist = geralPersist;
         }
-
         public async Task<Evento> AddEventos(Evento model)
         {
             try
@@ -60,7 +58,7 @@ namespace Projeto01.Application
 
         public async Task<bool> DeleteEvento(int eventoId)
         {
-           try
+            try
             {
                 var evento = await _eventoPersist.GetEventoByIdAsync(eventoId, false);
                 if (evento == null) throw new Exception("Evento para delete não encontrado.");
@@ -79,7 +77,7 @@ namespace Projeto01.Application
             try
             {
                 var eventos = await _eventoPersist.GetAllEventosAsync(includePalestrantes);
-                if(eventos == null) return null;
+                if (eventos == null) return null;
 
                 return eventos;
             }
@@ -94,7 +92,7 @@ namespace Projeto01.Application
             try
             {
                 var eventos = await _eventoPersist.GetAllEventosByTemaAsync(tema, includePalestrantes);
-                if(eventos == null) return null;
+                if (eventos == null) return null;
 
                 return eventos;
             }
@@ -109,7 +107,7 @@ namespace Projeto01.Application
             try
             {
                 var eventos = await _eventoPersist.GetEventoByIdAsync(eventoId, includePalestrantes);
-                if(eventos == null) return null;
+                if (eventos == null) return null;
 
                 return eventos;
             }
