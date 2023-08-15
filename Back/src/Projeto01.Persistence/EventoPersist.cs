@@ -13,7 +13,7 @@ namespace Projeto01.Persistence
         public EventoPersist(Projeto01Context context)
         {
             _context = context;
-            // _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+            //_context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public async Task<Evento[]> GetAllEventosAsync(bool includePalestrantes = false)

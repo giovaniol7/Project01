@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Projeto01.Persistence.Migrations
@@ -16,7 +16,7 @@ namespace Projeto01.Persistence.Migrations
                     Local = table.Column<string>(type: "TEXT", nullable: true),
                     DataEvento = table.Column<DateTime>(type: "TEXT", nullable: true),
                     Tema = table.Column<string>(type: "TEXT", nullable: true),
-                    QtdPessoa = table.Column<int>(type: "INTEGER", nullable: false),
+                    QtdPessoas = table.Column<int>(type: "INTEGER", nullable: false),
                     ImagemURL = table.Column<string>(type: "TEXT", nullable: true),
                     Telefone = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true)

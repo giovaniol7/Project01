@@ -2,13 +2,12 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto01.Persistence.Contexts;
 
 namespace Projeto01.Persistence.Migrations
 {
     [DbContext(typeof(Projeto01Context))]
-    partial class Projeto01ContextModelSnapshot : ModelSnapshot
+    partial class ProEventosContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -16,195 +15,148 @@ namespace Projeto01.Persistence.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.2");
 
-            modelBuilder.Entity("Projeto01.Domain.Evento", b =>
+            modelBuilder.Entity("ProEventos.Domain.Evento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
                     b.Property<DateTime?>("DataEvento")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("ImagemURL")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("Local")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("QtdPessoa")
+                    b.Property<int>("QtdPessoas")
                         .HasColumnType("INTEGER");
-
                     b.Property<string>("Telefone")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("Tema")
                         .HasColumnType("TEXT");
-
                     b.HasKey("Id");
-
                     b.ToTable("Eventos");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.Lote", b =>
+            modelBuilder.Entity("ProEventos.Domain.Lote", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
                     b.Property<DateTime?>("DataFim")
                         .HasColumnType("TEXT");
-
                     b.Property<DateTime?>("DataInicio")
                         .HasColumnType("TEXT");
-
                     b.Property<int>("EventoId")
                         .HasColumnType("INTEGER");
-
                     b.Property<string>("Nome")
                         .HasColumnType("TEXT");
-
                     b.Property<decimal>("Preco")
                         .HasColumnType("TEXT");
-
                     b.Property<int>("Quantidade")
                         .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
-
                     b.HasIndex("EventoId");
-
                     b.ToTable("Lotes");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.Palestrante", b =>
+            modelBuilder.Entity("ProEventos.Domain.Palestrante", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("ImagemURL")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("MiniCurriculo")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("Nome")
                         .HasColumnType("TEXT");
-
                     b.Property<string>("Telefone")
                         .HasColumnType("TEXT");
-
                     b.HasKey("Id");
-
                     b.ToTable("Palestrantes");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.PalestranteEvento", b =>
+            modelBuilder.Entity("ProEventos.Domain.PalestranteEvento", b =>
                 {
                     b.Property<int>("EventoId")
                         .HasColumnType("INTEGER");
-
                     b.Property<int>("PalestranteId")
                         .HasColumnType("INTEGER");
-
                     b.HasKey("EventoId", "PalestranteId");
-
                     b.HasIndex("PalestranteId");
-
                     b.ToTable("PalestrantesEventos");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.RedeSocial", b =>
+            modelBuilder.Entity("ProEventos.Domain.RedeSocial", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
                     b.Property<int?>("EventoId")
                         .HasColumnType("INTEGER");
-
                     b.Property<string>("Nome")
                         .HasColumnType("TEXT");
-
                     b.Property<int?>("PalestranteId")
                         .HasColumnType("INTEGER");
-
                     b.Property<string>("URL")
                         .HasColumnType("TEXT");
-
                     b.HasKey("Id");
-
                     b.HasIndex("EventoId");
-
                     b.HasIndex("PalestranteId");
-
                     b.ToTable("RedesSociais");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.Lote", b =>
+            modelBuilder.Entity("ProEventos.Domain.Lote", b =>
                 {
-                    b.HasOne("Projeto01.Domain.Evento", "Evento")
+                    b.HasOne("ProEventos.Domain.Evento", "Evento")
                         .WithMany("Lotes")
                         .HasForeignKey("EventoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
                     b.Navigation("Evento");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.PalestranteEvento", b =>
+            modelBuilder.Entity("ProEventos.Domain.PalestranteEvento", b =>
                 {
-                    b.HasOne("Projeto01.Domain.Evento", "Evento")
+                    b.HasOne("ProEventos.Domain.Evento", "Evento")
                         .WithMany("PalestrantesEventos")
                         .HasForeignKey("EventoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Projeto01.Domain.Palestrante", "Palestrante")
+                    b.HasOne("ProEventos.Domain.Palestrante", "Palestrante")
                         .WithMany("PalestrantesEventos")
                         .HasForeignKey("PalestranteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
                     b.Navigation("Evento");
-
                     b.Navigation("Palestrante");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.RedeSocial", b =>
+            modelBuilder.Entity("ProEventos.Domain.RedeSocial", b =>
                 {
-                    b.HasOne("Projeto01.Domain.Evento", "Evento")
+                    b.HasOne("ProEventos.Domain.Evento", "Evento")
                         .WithMany("RedesSociais")
                         .HasForeignKey("EventoId");
-
-                    b.HasOne("Projeto01.Domain.Palestrante", "Palestrante")
+                    b.HasOne("ProEventos.Domain.Palestrante", "Palestrante")
                         .WithMany("RedesSociais")
                         .HasForeignKey("PalestranteId");
-
                     b.Navigation("Evento");
-
                     b.Navigation("Palestrante");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.Evento", b =>
+            modelBuilder.Entity("ProEventos.Domain.Evento", b =>
                 {
                     b.Navigation("Lotes");
-
                     b.Navigation("PalestrantesEventos");
-
                     b.Navigation("RedesSociais");
                 });
 
-            modelBuilder.Entity("Projeto01.Domain.Palestrante", b =>
+            modelBuilder.Entity("ProEventos.Domain.Palestrante", b =>
                 {
                     b.Navigation("PalestrantesEventos");
-
                     b.Navigation("RedesSociais");
                 });
 #pragma warning restore 612, 618

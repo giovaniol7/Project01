@@ -4,7 +4,7 @@ using Projeto01.Persistence.Contexts;
 
 namespace Projeto01.Persistence
 {
-    public class GeralPersist : IGeralPersist
+   public class GeralPersist : IGeralPersist
     {
         private readonly Projeto01Context _context;
         public GeralPersist(Projeto01Context context)
@@ -12,10 +12,9 @@ namespace Projeto01.Persistence
             _context = context;
 
         }
-
         public void Add<T>(T entity) where T : class
         {
-            _context.Add(entity);
+            _context.AddAsync(entity);
         }
 
         public void Update<T>(T entity) where T : class
