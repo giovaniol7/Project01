@@ -9,11 +9,11 @@ using Projeto01.Persistence.Contexts;
 
 namespace Projeto01.Persistence
 {
-    public class EventoPresist : IEventoPersist
+    public class EventoPersist : IEventoPersist
     {
         private readonly Projeto01Context _context;
 
-        public EventoPresist(Projeto01Context context)
+        public EventoPersist(Projeto01Context context)
         {
             _context = context;
 
@@ -32,7 +32,7 @@ namespace Projeto01.Persistence
                 .ThenInclude(pe => pe.Palestrante);
             }
 
-            query = query.OrderBy(e => e.Id);
+            query = query.AsNoTracking().OrderBy(e => e.Id);
 
             return await query.ToArrayAsync();
         }
@@ -50,7 +50,7 @@ namespace Projeto01.Persistence
                 .ThenInclude(pe => pe.Palestrante);
             }
 
-            query = query.OrderBy(e => e.Id)
+            query = query.AsNoTracking().OrderBy(e => e.Id)
                     .Where(e => e.Tema.ToLower().Contains(tema.ToLower()));
 
             return await query.ToArrayAsync();
@@ -69,7 +69,7 @@ namespace Projeto01.Persistence
                 .ThenInclude(pe => pe.Palestrante);
             }
 
-            query = query.OrderBy(e => e.Id)
+            query = query.AsNoTracking().OrderBy(e => e.Id)
                     .Where(e => e.Id == eventoId);
 
             return await query.FirstOrDefaultAsync();

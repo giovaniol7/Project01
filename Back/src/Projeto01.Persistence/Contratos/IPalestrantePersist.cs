@@ -5,8 +5,8 @@ namespace Projeto01.Persistence.Contratos
 {
     public interface IPalestrantePersist
     {
-        Task<Palestrante[]> GetAllPalestrantesByNomeAsync(string Nome, bool includeEventos = false);
+        Task<Palestrante[]> GetAllPalestrantesByNomeAsync(string nome, bool includeEventos = false);
         Task<Palestrante[]> GetAllPalestrantesAsync(bool includeEventos = false);
-        Task<Palestrante> GetPalestranteByIdAsync(int PalestranteId, bool includeEventos = false);
+        Task<Palestrante> GetPalestranteByIdAsync(int palestranteId, bool includeEventos = false);
     }
 }

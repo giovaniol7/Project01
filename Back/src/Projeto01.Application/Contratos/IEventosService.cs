@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Projeto01.Domain;
 
 namespace Projeto01.Application.Contratos
 {
-    public interface IEventosServices
+    public interface IEventosService
     {
         Task<Evento> AddEventos(Evento model);
         Task<Evento> UpdateEvento(int eventoId, Evento model);

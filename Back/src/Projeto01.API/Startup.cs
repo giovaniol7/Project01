@@ -5,7 +5,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Projeto01.Application;
+using Projeto01.Application.Contratos;
+using Projeto01.Persistence;
 using Projeto01.Persistence.Contexts;
+using Projeto01.Persistence.Contratos;
 
 namespace PROJETO01.API
 {
@@ -25,6 +29,9 @@ namespace PROJETO01.API
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
             services.AddControllers();
+            services.AddScoped<IEventosService , EventoService>();
+            services.AddScoped<IGeralPersist, GeralPersist>();
+            services.AddScoped<IEventoPersist, EventoPersist>();
             services.AddCors();
             services.AddSwaggerGen(c =>
             {
