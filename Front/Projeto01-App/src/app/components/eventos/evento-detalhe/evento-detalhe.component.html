@@ -10,7 +10,7 @@
                         [ngClass]="{'is-invalid': f.tema.errors && f.tema.touched}"
                         formControlName="tema" placeholder="Insira o Tema">
                     <div *ngIf="f.tema.errors?.required && f.tema.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório!
+                        Tema é Obrigatório.
                     </div>
                     <div *ngIf="f.tema.errors?.minlength" class="invalid-feedback">
                         Tema deve ter no mínimo 4 caracteres.
@@ -27,7 +27,7 @@
                         [ngClass]="{'is-invalid': f.local.errors && f.local.touched}" 
                         formControlName="local" placeholder="">
                     <div *ngIf="f.local.errors?.required && f.local.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório
+                        Local é Obrigatório.
                     </div>
                 </div>
                 <div class="form-group col-md-4">
@@ -36,7 +36,7 @@
                         [ngClass]="{'is-invalid': f.dataEvento.errors && f.dataEvento.touched}"
                         formControlName="dataEvento" placeholder="">
                     <div *ngIf="f.dataEvento.errors?.required && f.dataEvento.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório
+                        Data e Hora é Obrigatório.
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                         [ngClass]="{'is-invalid': f.qtdPessoas.errors && f.qtdPessoas.touched}"
                         formControlName="qtdPessoas" placeholder="">
                     <div *ngIf="f.qtdPessoas.errors?.required && f.qtdPessoas.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório
+                        Qtd Pessoas é Obrigatório.
                     </div>
                     <div *ngIf="f.qtdPessoas.errors?.max && f.qtdPessoas.touched" class="invalid-feedback">
                         Qtd Pessoas deve ser menor que 120000.
@@ -59,7 +59,7 @@
                         [ngClass]="{'is-invalid': f.telefone.errors && f.telefone.touched}"
                         formControlName="telefone" placeholder="(000) 90000-0000">
                     <div *ngIf="f.telefone.errors?.required && f.telefone.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório
+                        Telefone é Obrigatório.
                     </div>
                 </div>
                 <div class="form-group col-md-4">
@@ -68,7 +68,7 @@
                         [ngClass]="{'is-invalid': f.email.errors && f.email.touched}" 
                         formControlName="email" placeholder="e-mail">
                     <div *ngIf="f.email.errors?.required && f.email.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório
+                        E-mail é Obrigatório.
                     </div>
                     <div *ngIf="f.email.errors?.email && f.email.touched" class="invalid-feedback">
                         Email não é suportado.
@@ -80,7 +80,7 @@
                         [ngClass]="{'is-invalid': f.imagemURL.errors && f.imagemURL.touched}"
                         formControlName="imagemURL" placeholder="imagem">
                     <div *ngIf="f.imagemURL.errors?.required && f.imagemURL.touched" class="invalid-feedback">
-                        Este Campo é Obrigatório
+                        Imagem é Obrigatório.
                     </div>
                 </div>
             </div>
