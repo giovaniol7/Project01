@@ -10,6 +10,8 @@ using Projeto01.Application.Contratos;
 using Projeto01.Persistence;
 using Projeto01.Persistence.Contexts;
 using Projeto01.Persistence.Contratos;
+using AutoMapper;
+using System;
 
 namespace PROJETO01.API
 {
@@ -32,6 +34,8 @@ namespace PROJETO01.API
                     .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling =
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IEventoService, EventoService>();
             services.AddScoped<IGeralPersist, GeralPersist>();

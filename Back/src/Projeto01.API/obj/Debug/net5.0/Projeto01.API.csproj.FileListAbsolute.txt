@@ -65,3 +65,9 @@ D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\ne
 D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\AutoMapper.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\Users\Giovani\Documents\_Cursos\Project01\Back\src\Projeto01.API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
